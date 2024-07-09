@@ -80,17 +80,12 @@ https://github.com/sahilmore-git/stream-flix/assets/46355027/b646d52e-b565-47bc-
 **Search Infinite Scroll**
 https://github.com/sahilmore-git/stream-flix/assets/46355027/12a09d90-3adb-4a68-9a69-b2a122498280
  
-
-
-
-
-
-
-
-
-
-
-
+## Features:
+1. Top Infinite Scroll.
+2. Bottom Infinite Scroll.
+3. Search with Infinite Scroll.
+4. Genre Filter
+5. Typescript for type safety
     
 ## Author
 
