@@ -1,0 +1,117 @@
+
+@import '/src/_settings.scss';
+
+.modalWrapper{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.5);
+    .modalContainer{
+        position: absolute;
+        width: 650px;
+        height: auto;
+        background-color: $smoke;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border-radius: 0.2rem;
+        .modalHeader{
+            .modalBackDropImage{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                overflow: hidden;
+                top: 0;
+                left: 0;
+                background: $bgcolor;
+                background-size: cover;
+                z-index: -1;
+                transform: skewY(-2.2deg);
+                transform-origin: 0 0;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+            }
+            .modalTitle{
+                display: flex;
+                flex-direction: column-reverse;
+                margin-bottom: 2rem;
+                color: white;
+                font-weight: 300;
+                font-size: x-large;
+                .textBackDrop{
+                    background-color: rgba(0,0,0,0.3);
+                    border-radius: 7%;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                }
+            }
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            height: 250px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .modalContent{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            text-align: center; 
+            flex-direction: column;
+            .keyWrapper{
+                width: auto;
+                overflow-y: hidden;
+                height: 30px;
+                padding: 0.1rem;
+                overflow-x: scroll;
+                .keywords{
+                    width: 200px;
+                    margin-left: 10px;
+                    border: 0.5px solid black;
+                    border-radius: 0.2rem;
+                    padding: 0 0.5rem 0 0.5rem;
+                    text-align: center;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    height: 0.5rem;
+                    align-items: center;
+                }
+            }
+            .desc{
+                text-align: center;
+                color: black;
+                font-size: 1rem;
+                padding: 0.5rem;
+                .readMore{
+                    color: blue;
+                }
+            }
+        }
+    }
+    .close{
+        text-align: center;
+        padding: 1rem;
+        color: black;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 300px) {
+    .modalWrapper{
+        .modalContainer{
+            height: auto;
+            width: 80%;
+        }
+    }
+}
